@@ -1,0 +1,1 @@
+document.write("It is great learning JS together")
