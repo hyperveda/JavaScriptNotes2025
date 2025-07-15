@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- User will be asked to input a number
+    if number is even 
+    display the output in paragraph tag in green color
+    if number is odd
+    display the output in paragraph tag in red color -->
+
+    <p id="para">Output :</p>
+    <input type="number" onmouseover="fun()" name="" id="input_number">
+    <p id="output_number">Output</p>
+    <script>
+
+        // alert("I am alert")
+        // confirm(" I am confirm")
+
+      let num =  parseInt(prompt('Enter A Number'))///ftftft
+        if(num % 2 == 0){
+            document.getElementById('para').style.color='brown'
+            document.getElementById('para').innerText="Output = Even "+num
+        }
+        else{
+            document.getElementById('para').style.color='#ff0000'
+            document.getElementById('para').innerText="Output = Odd "+num
+        }
+
+
+        function fun(){
+        let input_number = document.getElementById('input_number').value
+        document.getElementById('output_number').innerText = input_number
+        }
+
+
+        y --> temp
+        temp-->x        
+    </script>
+</body>
+</html>
+
+
+
+h1,p,label ----> innertext,innerhtml,styles.....
+img ----> src
+input ----> value
+button ----> hidden,disabled
